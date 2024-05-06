@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>3D Wireframe Renderer</title>
+    <link rel="stylesheet" href="style.css">
+        
+    <script defer src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.3.0/math.min.js></script>
+
+    <!-- <script src='path/to/decimal.js'></script>
+
+    <script type="module">import Decimal from './path/to/decimal.mjs';</script> -->
+
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+    <div class="flex_container_center_align">
+
+        <div class="page_separation"></div>
+
+        <h1 class="white_text" id="description_line1">This project will render any number of lines and vertices in 3D space. Choose a preset or create your own custom geometry</h1>
+        <div class="page_separation"></div>
+        <h3 class="white_text" id="description_line2">Note: the renderer does not perform back-face culling, and hence if a custom shape with many vertices is rendered,</h3>
+        <h3 class="white_text" id="description_line3">screen may become very populated, and/or may affect performace. Please email me about any bugs.</h3>
+        <h3 class="white_text" id="description_line4">This project is a work in progress and further features will be added in the future</h3>
+    </div>
+
+    <div class="flex_container_center_align">
+
+        <div class="display_window">
+            <div id="vertices"></div>
+        </div>
+
+        <div class="flex_container_justify_content_center" id="arrows">
+
+            <div class="arrow_left">
+                <button id="arrow_left">
+                    <img class="img_arrow_left" src="https://cdn-icons-png.flaticon.com/512/32/32213.png" alt="left">
+                </button>
+            </div>
+
+            <div class="arrow_right">
+                <button id="arrow_right">
+                    <img class="img_arrow_right" src="https://cdn-icons-png.flaticon.com/512/32/32213.png" alt="right">
+                </button>
+            </div>
+
+        </div>
+
+        <div>
+            <button id="clear_button">
+                <h1 class="black_text">Clear Screen</h1>
+            </button>
+        </div>
+
+    </div>
+
+    <div class="page_separation"></div>
+
+    <div class="heading">
+        <h1 class="white_text">PRESETS:</h1>
+    </div>
+
+    <div class="flex_container_justify_content_center">
+
+        <button class="preset_button_template" id="cube_button">
+            <h1>Cube</h1>
+        </button>
+
+        <button class="preset_button_template" id="pyramid_button">
+            <h1>Pyramid</h1>
+        </button>
+
+        <button class="preset_button_template" id="pyramid_button">
+            <h1>Cuboid</h1>
+        </button>
+
+        <button class="preset_button_template" id="pyramid_button">
+            <h1>Dodecahedron</h1>
+        </button>
+
+    </div>
+
+    <div class="page_separation"></div>
+
+    <div class="heading">
+        <h1 class="white_text">CUSTOM SHAPE:</h1>
+    </div>
+
+    <div>
+        <button class="preset_button_template" id="custom_vertex">
+            <h1>NEW VERTEX</h1>
+        </button>
+
+        <div class="list_of_vertices">
+
+        </div>
+
+        <button class="preset_button_template" id="custom_line">
+            <h1>NEW LINE</h1>
+        </button>
+
+        <div class="list_of_lines"></div>
+
+        <button class="preset_button_template" id="custom_save">
+            <h1>SAVE</h1>
+        </button>
+    </div>
+
+</body>
+
+</html>

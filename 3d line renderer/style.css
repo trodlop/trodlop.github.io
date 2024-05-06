@@ -1,0 +1,193 @@
+* {
+    margin: 0px;
+}
+
+body {
+    background-color: #23323b;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex_container_center_align {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex_container_justify_content_center {
+    display: flex;
+    justify-content: center;
+}
+
+.preset_button_template {
+    height: 50px;
+    width: 200px;
+    margin: 10px;
+    margin-top: 50px;
+    background-color: white;
+}
+
+.page_separation {
+    height: 10px;
+    width: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+.white_text {
+    color: white;
+}
+
+.black_text {
+    color: black;
+}
+
+.heading {
+    margin-left: 50px;
+}
+
+#description_line4 {
+    margin-top: 50px;
+}
+
+.display_window {
+    height: 500px;
+    width: 600px;
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 20px;
+    border: 5px solid black;
+}
+
+#arrows {
+    margin-top: 25px;
+}
+
+.arrow_left {
+    margin-right: 40px;
+}
+
+.img_arrow_left {
+    transform: scaleX(-1);
+    height: 50px;
+    width: 50px;
+    padding-top: 5px;
+}
+
+.arrow_right {
+    margin-left: 40px;
+}
+
+.img_arrow_right {
+    height: 50px;
+    width: 50px;
+    padding-top: 5px;
+}
+
+#vertices {
+    position: relative;
+    left: 275px;
+    top: 225px;
+}
+
+.template_vertices {
+    height: 5px;
+    width: 5px;
+    background-color: red;
+    margin: 20px;
+    border-radius: 100%;
+    border: 2px solid red;
+    position: absolute;
+}
+
+#clear_button {
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .template_vertices1 {
+    height: 5px;
+    width: 5px;
+    background-color: red;
+    margin: 20px;
+    border-radius: 100%;
+    border: 2px solid red;
+    position: absolute;
+}
+.template_vertices2 {
+    height: 5px;
+    width: 5px;
+    background-color: blue;
+    margin: 20px;
+    border-radius: 100%;
+    border: 2px solid blue;
+    position: absolute;
+}
+.template_vertices3 {
+    height: 5px;
+    width: 5px;
+    background-color: green;
+    margin: 20px;
+    border-radius: 100%;
+    border: 2px solid green;
+    position: absolute;
+}
+.template_vertices4 {
+    height: 5px;
+    width: 5px;
+    background-color: yellow;
+    margin: 20px;
+    border-radius: 100%;
+    border: 2px solid yellow;
+    position: absolute;
+}
+.template_vertices5 {
+    height: 5px;
+    width: 5px;
+    background-color: pink;
+    margin: 20px;
+    border-radius: 100%;
+    border: 2px solid pink;
+    position: absolute;
+}
+.template_vertices6 {
+    height: 5px;
+    width: 5px;
+    background-color: purple;
+    margin: 20px;
+    border-radius: 100%;
+    border: 2px solid purple;
+    position: absolute;
+}
+.template_vertices7 {
+    height: 5px;
+    width: 5px;
+    background-color: orange;
+    margin: 20px;
+    border-radius: 100%;
+    border: 2px solid orange;
+    position: absolute;
+}
+.template_vertices8 {
+    height: 5px;
+    width: 5px;
+    background-color: gray;
+    margin: 20px;
+    border-radius: 100%;
+    border: 2px solid gray;
+    position: absolute;
+} */

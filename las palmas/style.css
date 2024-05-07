@@ -1,0 +1,493 @@
+.archivo-black-regular {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }  
+
+* {
+    margin: 0px;
+    font-family: "Archivo Black", sans-serif;
+}
+
+h1 {
+    font-size: 75px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.white_text_template {
+    color: white;
+}
+
+.flex_align_center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex_align_center_vert {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.spacing {
+    background-color: white;
+}
+
+#spacing1 {
+    grid-column: 1/13;
+    grid-row: 2/3;
+}
+
+#spacing2 {
+    grid-column: 1/13;
+    grid-row: 9/10;
+}
+
+#spacing3 {
+    grid-column: 1/13;
+    grid-row: 12/13;
+}
+
+#spacing4 {
+    grid-column: 1/13;
+    grid-row: 16/17;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    background-color: #3b8883;
+    z-index: 1000;
+}
+
+#lpcc_logo {
+    height: 100px;
+    width: 320px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: baseline;
+}
+
+.navbar_template {
+    margin-left: 50px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.navbar_template:hover {
+    color: #c2c2c2;
+}
+
+.section_heading_template {
+    grid-column: 2/12;
+    grid-row: 3/4;
+    border-top: 10px solid black;
+    padding-top: 20px;
+    font-size: 50px;
+}
+
+.gallery_template {
+    width: 100%;
+}
+
+#about {
+    margin-left: 100px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: max-content;
+    padding-top: 100px;
+}
+
+#main_title{
+    grid-column: 4/10;
+    grid-row: 1/2;
+    z-index: 1;
+}
+
+#title {
+    margin-top: 300px;
+    padding-bottom: 20px;
+    text-shadow: 2px 2px 10px black;
+}
+
+#subtitle {
+    border-top: 10px solid white;
+    padding-top: 20px;
+}
+
+#title_background {
+    grid-column: 1/13;
+    grid-row: 1/2;
+}
+
+#image1 {
+    height: 1080px;
+    width: 100%;
+    object-fit: cover;
+}
+
+@keyframes lpcc_logo_shrink {
+    0% {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    100% {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}
+
+@keyframes lpcc_logo_grow {
+    0% {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    100% {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+#section_overview_heading {
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+#section_overview_content {
+    grid-column: 2/8;
+    grid-row: 4/9;
+}
+
+#image2 {
+    width: 500px;
+    grid-column: 9/12;
+    grid-row: 4/8;
+}
+
+#gallery_heading {
+    margin-top: 150px;
+    margin-bottom: 50px;
+    grid-column: 2/12;
+    grid-row: 10/11;
+}
+
+#gallery_grid {
+    grid-column: 1/13;
+    grid-row: 11/12;
+    display: grid;
+    grid-template-columns: 50px 1fr 25px 1fr 50px;
+    grid-template-rows: 1fr 25px 1fr 25px 1fr ;
+}
+
+#gallery_image1 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+#gallery_image2 {
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+#gallery_image3 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+#gallery_image4 {
+    grid-column: 4/5;
+    grid-row: 3/4;
+}
+
+#gallery_image5 {
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+
+#gallery_image6 {
+    grid-column: 4/5;
+    grid-row: 5/6;
+}
+
+#planning_heading {
+    margin-top: 150px;
+    margin-bottom: 50px;
+    grid-column: 2/12;
+    grid-row: 13/14;
+}
+
+#planning_document_div {
+    grid-column: 9/12;
+    grid-row: 14/16;
+}
+
+#planning_document {
+    display: grid;
+}
+
+#planning_document_cover {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: 300px;
+    width: 230px;
+}
+
+#planning_document_download {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    z-index: 1;
+    margin-left: 70px;
+    height: 100px;
+    width: 100px;
+    opacity: 0%;
+    font-size: 20px;
+    color: black;
+}
+
+#section_planning_content {
+    grid-column: 2/9;
+    grid-row: 14/15;
+}
+
+#footer {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    grid-column: 2/12;
+    grid-row: 19/20;
+    border-top: 10px solid black;
+}
+
+.footer_text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+}
+
+@media (max-width: 1000px) {
+
+    #spacing3 {
+        grid-column: 1/13;
+        grid-row: 13/14;
+    }
+
+    .header {
+        width: 100%;
+        position: fixed;
+        background-color: #3b8883;
+        z-index: 1000;
+    }
+    
+    #navbar {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 3fr 2fr;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #lpcc_logo {
+        height: 100px;
+        width: 320px;
+        grid-column: 1/4;
+        grid-row: 1/2;
+        padding-top: 50px;
+        padding-bottom: 0px;
+    }
+
+    @keyframes lpcc_logo_shrink {
+        0% {
+            padding-top: 50px;
+            padding-bottom: 0px;
+        }
+    
+        100% {
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+    }
+    
+    @keyframes lpcc_logo_grow {
+        0% {
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+    
+        100% {
+            padding-top: 50px;
+            padding-bottom: 0px;
+        }
+    }
+    
+    .navbar_template {
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+    }
+    
+    .navbar_template:hover {
+        color: #c2c2c2;
+    }
+
+    #about {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    #gallery {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        margin-left: 0px;
+        text-align: center;
+    } 
+
+    #planning {
+        grid-column: 3/4;
+        grid-row: 2/3;
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+        grid-template-rows: max-content;
+        padding-top: 100px;
+    }
+
+    #section_overview_heading {
+        margin-top: 150px;
+        margin-bottom: 50px;
+    }
+
+    #section_overview_content {
+        margin-top: 50px;
+        grid-column: 2/12;
+        grid-row: 8/9;
+    }
+    
+    #image2 {
+        width: 100%;
+        grid-column: 2/12;
+        grid-row: 4/7;
+    }
+    
+    #gallery_heading {
+        margin-top: 150px;
+        margin-bottom: 50px;
+        grid-column: 2/12;
+        grid-row: 10/11;
+    }
+    
+    #gallery_grid {
+        grid-column: 1/13;
+        grid-row: 11/13;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        row-gap: 20px;
+    }
+    
+    #gallery_image1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    #gallery_image2 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    
+    #gallery_image3 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    
+    #gallery_image4 {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    
+    #gallery_image5 {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    
+    #gallery_image6 {
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
+    
+    #planning_heading {
+        margin-top: 150px;
+        margin-bottom: 50px;
+        grid-column: 2/12;
+        grid-row: 14/15;
+    }
+    
+    #planning_document_div {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        grid-column: 2/12;
+        grid-row: 17/18;
+    }
+    
+    #planning_document {
+        display: grid;
+    }
+    
+    #planning_document_cover {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        height: 300px;
+        width: 230px;
+    }
+    
+    #planning_document_download {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        z-index: 1;
+        margin-left: 70px;
+        height: 100px;
+        width: 100px;
+        opacity: 0%;
+        font-size: 20px;
+        color: black;
+    }
+    
+    #section_planning_content {
+        grid-column: 2/12;
+        grid-row: 15/16;
+    }
+    
+    #footer {
+        margin-bottom: 50px;
+        grid-column: 2/12;
+        grid-row: 19/20;
+        border-top: 10px solid black;
+    }
+    
+    .footer_text {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 800;
+        text-align: center;
+    }
+}

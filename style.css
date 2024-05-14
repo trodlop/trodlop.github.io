@@ -748,3 +748,13 @@ h2 {
         justify-content: baseline;
     }
 }
+
+@media (max-width: 500px) {
+
+    #about_text {
+        width: 50%;
+    }
+}
+
+
+

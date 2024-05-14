@@ -486,7 +486,7 @@ h2 {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        margin-top: 0px;
+        margin-top: 30px;
         border-top: 10px solid orange;
         padding-top: 20px;
     }

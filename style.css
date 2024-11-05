@@ -56,9 +56,94 @@ h2 {
     align-items: center;
 }
 
+#portrait {
+    height: 40vw;
+    width: 40vw;
+    position: absolute;
+    z-index: -1;
+    top: 50px;
+    right: 0px;
+}
+
+#linkedin:hover, #github:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+#skills_list {
+    margin-left: 50px;
+    width: 55vw;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap; /* Enables wrapping to the next line */
+    gap: 10px; /* Optional: Adds spacing between items */
+}
+
+.skills_list_template {
+    height: 18px;
+    flex: 0 1 auto; /* Adjusts to content width while allowing wrapping */
+    padding: 10px; /* Adds padding around each skill */
+    border-radius: 5px; /* Optional: Rounds the corners */
+}
+
+.skills_h1_template {
+    font-size: 18px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#skill_vscode {
+    background-color: #0078d7;
+}
+#skill_html {
+    background-color: #e34c26;
+}
+#skill_css {
+    background-color: #264de4;
+}
+#skill_javascript {
+    background-color: #f0db4f;
+}
+#skill_typescript {
+    background-color: #007acc;
+}
+#skill_python {
+    background-color: #306998;
+}
+#skill_reactjs {
+    background-color: #61DBFB;
+}
+#skill_nodejs {
+    background-color: #3c873a;
+}
+#skill_json {
+    background-color: #864586;
+}
+#skill_inkscape {
+    background-color: #222222;
+}
+#skill_mysql {
+    background-color: #00758F;
+}
+#skill_chartjs {
+    background-color: #c56969;
+}
+#skill_matplotlib {
+    background-color: #d39357;
+}
+#skill_numpy {
+    background-color: #4d77cf;
+}
+#skill_pandas {
+    background-color: #150458;
+}
+#skill_git {
+    background-color: #F1502F;
+}
+
 @media (max-width: 1920px) {
     .heading_padding {
-        height:150px;
+        height:50px;
         background-color: #0c0d11;
     }
     
@@ -80,18 +165,19 @@ h2 {
     }
     
     #tristan_rodriguez {
-        width: 15%;
-        height: 15%;
+        height: 100px;
+        width: 178px;
         margin-left: 30px;
         margin-right: 20px;
-        margin-top: 10px;
-        margin-bottom: 10px;
         padding-right: 50px;
         border-right: 10px solid orange;
     }
     
     #menu {
-        margin-top: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
     }
     
     .menu_links {
@@ -109,37 +195,86 @@ h2 {
         margin-bottom: 20px;
     }
 
+    #fun_facts {
+        margin-top: 30px;
+        margin-left: 50px;
+        width: 55vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .fun_fact_template {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .fun_fact_template_h1 {
+        font-size: 24px;
+    }
+
+    #coffees_this_month, #lines_of_code, #github_commits {
+        color: orange;
+    }
+
+    #coffees_this_month::after, #lines_of_code::after, #github_commits::after {
+        content: '|';
+        color: white;
+        position: relative;
+        left: 2px; /* Adjust to align properly with text */
+        top: -2px; /* Adjust to align properly with text */
+        z-index: -1;
+        animation: blink 0.7s steps(1) infinite;
+    }
+    
+    @keyframes blink {
+        50% { opacity: 0; }
+    }
+
+    .no-caret::after {
+        display: none;
+    }
+
     #portrait {
-        height: 500px;
-        width: 800px;
+        height: 80vw;
+        width: 40vw;
         position: absolute;
         z-index: -1;
-        top: 50px;
+        top: 50%;
         right: 0px;
+        transform: translate(0%,-50%);
+    }
+
+    #portrait_img {
+        height: 80vw;
+        width: 40vw;
     }
 
     #about_text {
         width: 50%;
+        margin-top: 100px;
+        margin-bottom: 100px;
         text-align: left;
     }
     
     .main_grid {
-        margin-top: 50px;
         margin-bottom: 100px;
         border-top: 5px solid white;
         display: grid;
-        /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        grid-gap: 10px; */
         row-gap: 50px;
         grid-template-columns: 0px 1fr 5px 1fr 0px;
-        grid-template-rows: 0px 100px minmax(1fr , 750px) minmax(1fr , 750px) minmax(1fr , 750px) minmax(1fr , 750px);
+        grid-template-rows: 0px 100px minmax(1fr , 750px) minmax(1fr , 750px) minmax(1fr , 750px) minmax(1fr , 750px) minmax(1fr , 750px) minmax(1fr , 750px);
         background-color: #0c0d11;
     }
     
     .main_grid_midline {
         background-color: white;
         grid-column: 3/4;
-        grid-row: 3/7;
+        grid-row: 3/9;
     }
     
     .main_grid_template {
@@ -188,6 +323,11 @@ h2 {
         grid-column: 2/3;
         grid-row: 6/7;
     }
+
+    #project_5 {
+        grid-column: 4/5;
+        grid-row: 7/8;
+    }
     
     .template_project_heading {
         width: 300px;
@@ -223,50 +363,32 @@ h2 {
             width: 100px;
         }
     }
-    
+
     @keyframes signature_shrink{
         0% {
-            height: 160.547px;
-            width: 285.438px;
-            /* position: relative;
-            top: 0px; */
+            height: 100px;
+            width: 178px;
+            border-right: 10px solid orange;
         }
     
         100% {
-            height: 80.274px;
-            width: 142.719px;
+            height: 50px;
+            width: 89px;
+            border-right: 5px solid orange;
         }
     }
     
     @keyframes signature_grow{
         0% {
-            height: 80.274px;
-            width: 142.719px;
+            height: 50px;
+            width: 89px;
+            border-right: 5px solid orange;
         }
     
         100% {
-            height: 160.547px;
-            width: 285.438px;
-        }
-    }
-    
-    @keyframes menu_shrink {
-        0% {
-            margin-top: 100px;
-        }
-    
-        100% {
-            margin-top: 50px;
-        }
-    }
-    
-    @keyframes menu_grow {
-        0% {
-            margin-top: 50px;
-        }
-    
-        100% {
-            margin-top: 100px;
+            height: 100px;
+            width: 178px;
+            border-right: 10px solid orange;
         }
     }
     
@@ -388,6 +510,22 @@ h2 {
             width: 100px;
         }
     }
+
+    #audio_level_animation {
+        height: 100px;
+        width: 100px;
+        margin-right: 50px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .bars {
+        height: 5px;
+        width: 5px;
+        background-color: white;
+        border-radius: 5px;
+    }
     
     #nav_link_about {
         margin-left: 50px;
@@ -397,6 +535,9 @@ h2 {
     }
     
     #cv_download {
+        position: relative;
+        top: 5vh;
+        /* left: -10vw; */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -415,7 +556,6 @@ h2 {
     #cv_download_text:hover {
         border-radius: 5px;
         border: 5px solid #ffffff;
-        text-decoration: none;
     }
     
     #footer {
@@ -439,24 +579,6 @@ h2 {
         height: 30px;
         width: 30px;
     }
-    
-    #linkedin:hover {
-        color: orange;
-        text-decoration: underline;
-    }
-}
-
-@media (max-width: 1800px) {
-
-    #portrait {
-        opacity: 0%;
-    }
-
-    #about_text {
-        width: 90%;
-        text-align: left;
-    }
-    
 }
 
 @media (max-width: 1250px) {
@@ -472,12 +594,8 @@ h2 {
     }
     
     #tristan_rodriguez {
-        height: 160.547px;
-        width: 285.438px;
         margin-left: 0px;
         margin-right: 0px;
-        margin-top: 0px;
-        margin-bottom: 0px;
         padding-right: 0px;
         border-right: 0px;
     }
@@ -486,9 +604,10 @@ h2 {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        margin-top: 30px;
         border-top: 10px solid orange;
-        padding-top: 20px;
+        height: 30px;
+        padding-top: 10px;
+        margin-top: 0px;
     }
     
     .menu_links {
@@ -498,6 +617,11 @@ h2 {
     .menu_template {
         margin-left: 10px;
         margin-right: 10px;
+        margin-bottom: 0px;
+    }
+
+    #portrait {
+        display: none;
     }
 
     #about_text {
@@ -560,73 +684,57 @@ h2 {
 
     @keyframes signature_shrink{
         0% {
-            height: 160.547px;
-            width: 285.438px;
+            height: 100px;
+            width: 178px;
+            border-right: 0px
         }
     
         100% {
-            height: 80.274px;
-            width: 142.719px;
+            height: 50px;
+            width: 89px;
+            border-right: 0px
         }
     }
     
     @keyframes signature_grow{
         0% {
-            height: 80.274px;
-            width: 142.719px;
+            height: 50px;
+            width: 89px;
+            border-right: 0px
         }
     
         100% {
-            height: 160.547px;
-            width: 285.438px;
+            height: 100px;
+            width: 178px;
+            border-right: 0px
         }
     }
     
     @keyframes menu_shrink {
         0% {
-            border-top: 10px solid orange;
-            margin-top: 30px;
+            border-top: 7.5px solid orange;
+            margin-top: 20px;
+            margin-bottom: 0px;
         }
     
         100% {
             border-top: 5px solid orange;
-            margin-top: 20px;
+            margin-top: 10px;
+            margin-bottom: 20px;
         }
     }
     
     @keyframes menu_grow {
         0% {
             border-top: 5px solid orange;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+    
+        100% {
+            border-top: 7.5px solid orange;
             margin-top: 20px;
-        }
-    
-        100% {
-            border-top: 10px solid orange;
-            margin-top: 30px;
-        }
-    }
-    
-    @keyframes main_heading_div_shrink {
-        0% {
-            padding-top: 25px;
-            padding-bottom: 25px;
-        }
-    
-        100% {
-            padding-top: 0px;
-            padding-bottom: 0px;
-        }
-    }
-    
-    @keyframes main_heading_div_grow {
-        0% {
-            padding-top: 0px;
-            padding-bottom: 0px;
-        }
-    
-        100% {
-            padding-top: 25px;
-            padding-bottom: 25px;
+            margin-bottom: 0px;
         }
     }
     
@@ -724,6 +832,10 @@ h2 {
             width: 75px;
         }
     }
+
+    #audio_level_animation {
+        margin-right: 0px;
+    }
     
     #nav_link_about {
         margin-left: 0px;
@@ -748,13 +860,3 @@ h2 {
         justify-content: baseline;
     }
 }
-
-@media (max-width: 500px) {
-
-    #about_text {
-        width: 70%;
-    }
-}
-
-
-

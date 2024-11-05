@@ -42,20 +42,84 @@
     <div class="heading_padding"></div>
 
     <div id="portrait">
-        <img src="images/diamond portrait.png" alt="Portrait">
+        <img id="portrait_img" src="images/diamond portrait.png" alt="Portrait">
     </div>
 
     <div id="about_section">
-        <h1 id="nav_link_about">Dedicated software developer:</h1>
+        <h1 id="nav_link_about"></h1>
+
+        <div id="fun_facts">
+            <div class="fun_fact_template">
+                <h1 class="fun_fact_template_h1">Coffees this month - </h1>
+                <h1 class="fun_fact_template_h1" id="coffees_this_month"></h1>
+            </div>
+            <div class="fun_fact_template">
+                <h1 class="fun_fact_template_h1">Lines of code ~ </h1>
+                <h1 class="fun_fact_template_h1" id="lines_of_code"></h1>
+            </div>
+            <div class="fun_fact_template">
+                <h1 class="fun_fact_template_h1">GitHub commits - </h1>
+                <h1 class="fun_fact_template_h1" id="github_commits"></h1>
+            </div>
+        </div>
+        
         <p id="about_text">
-            I thrive on turning ideas into reality through code. My passion for crafting innovative solutions drives me to continually push boundaries and explore new technologies. 
+            I'm a developer with experience in web technologies like HTML, CSS, JavaScript, and React, along with backend knowledge in Python and MySQL.
             <br>
             <br>
-            With a creative approach to problem-solving, I enjoy finding elegant solutions to complex challenges. 
-            <br>
-            <br>
-            Let's collaborate to bring your ideas to life with ingenuity and precision.
+            With a creative approach to problem-solving, I enjoy finding elegant solutions to complex problems. 
         </p>
+
+        <div id="skills_list">
+            <div class="skills_list_template flex_container_justify_center_vert flex_container_center_align" id="skill_vscode">
+                <h1 class="skills_h1_template">VSCode</h1>
+            </div>
+            <div class="skills_list_template flex_container_justify_center_vert flex_container_center_align" id="skill_html">
+                <h1 class="skills_h1_template">HTML</h1>
+            </div>
+            <div class="skills_list_template flex_container_justify_center_vert flex_container_center_align" id="skill_css">
+                <h1 class="skills_h1_template">CSS</h1>
+            </div>
+            <div class="skills_list_template flex_container_justify_center_vert flex_container_center_align" id="skill_javascript">
+                <h1 class="skills_h1_template" style="color: black;">JavaScript</h1>
+            </div>
+            <div class="skills_list_template flex_container_justify_center_vert flex_container_center_align" id="skill_typescript">
+                <h1 class="skills_h1_template">TypeScript</h1>
+            </div>
+            <div class="skills_list_template flex_container_justify_center_vert flex_container_center_align" id="skill_python">
+                <h1 class="skills_h1_template">Python</h1>
+            </div>
+            <div class="skills_list_template flex_container_justify_center_vert flex_container_center_align" id="skill_reactjs">
+                <h1 class="skills_h1_template" style="color: rgb(55, 57, 68);">React.js</h1>
+            </div>
+            <div class="skills_list_template flex_container_justify_center_vert flex_container_center_align" id="skill_nodejs">
+                <h1 class="skills_h1_template">Node.js</h1>
+            </div>
+            <div class="skills_list_template flex_container_justify_center_vert flex_container_center_align" id="skill_json">
+                <h1 class="skills_h1_template">JSON</h1>
+            </div>
+            <div class="skills_list_template flex_container_justify_center_vert flex_container_center_align" id="skill_inkscape">
+                <h1 class="skills_h1_template">Inkscape</h1>
+            </div>
+            <div class="skills_list_template flex_container_justify_center_vert flex_container_center_align" id="skill_mysql">
+                <h1 class="skills_h1_template">MySQL</h1>
+            </div>
+            <div class="skills_list_template flex_container_justify_center_vert flex_container_center_align" id="skill_chartjs">
+                <h1 class="skills_h1_template">Chart.js</h1>
+            </div>
+            <div class="skills_list_template flex_container_justify_center_vert flex_container_center_align" id="skill_matplotlib">
+                <h1 class="skills_h1_template">Matplotlib</h1>
+            </div>
+            <div class="skills_list_template flex_container_justify_center_vert flex_container_center_align" id="skill_numpy">
+                <h1 class="skills_h1_template">Numpy</h1>
+            </div>
+            <div class="skills_list_template flex_container_justify_center_vert flex_container_center_align" id="skill_pandas">
+                <h1 class="skills_h1_template">Pandas</h1>
+            </div>
+            <div class="skills_list_template flex_container_justify_center_vert flex_container_center_align" id="skill_git">
+                <h1 class="skills_h1_template">Git</h1>
+            </div>
+        </div>
 
         <div id="cv_download">
             <a id="cv_download_text" href="download/Tristan Rodriguez CV 2024.pdf" download="Tristan Rodriguez CV">
@@ -81,7 +145,31 @@
             <h1 class="template_project_heading">3D Wireframe Renderer</h1>
         </a>
 
-        <a class="main_grid_template flex_container_justify_center_vert" id="project_2" href="password generator/index.html" target="_blank">
+        <a class="main_grid_template flex_container_justify_center_vert" id="project_2" href="https://trodlop.github.io/Audio-Level-Meter/" target="_blank">
+            <div class="flex_container_justify_center flex_container_justify_center_vert" id="audio_level_animation">
+                <div class="bars flex_container_justify_center" id="bar1"></div>
+                <div class="bars flex_container_justify_center" id="bar2"></div>
+                <div class="bars flex_container_justify_center" id="bar3"></div>
+                <div class="bars flex_container_justify_center" id="bar4"></div>
+                <div class="bars flex_container_justify_center" id="bar5"></div>
+                <div class="bars flex_container_justify_center" id="bar6"></div>
+                <div class="bars flex_container_justify_center" id="bar7"></div>
+                <div class="bars flex_container_justify_center" id="bar8"></div>
+            </div>
+            <h1 class="template_project_heading">Audio Level Meter</h1>
+        </a>
+
+        <a class="main_grid_template flex_container_justify_center_vert" id="project_3" href="calculator/index.html" target="_blank">
+            <img id="calculator_icon" src="images/calculator.png" alt="Calculator">
+            <h1 class="template_project_heading">Calculator</h1>
+        </a>
+
+        <a class="main_grid_template flex_container_justify_center_vert" id="project_4" href="las palmas/index.html" target="_blank">
+            <img id="city_icon" src="images/icon white.png" alt="City">
+            <h1 class="template_project_heading">Las Palmas</h1>
+        </a>
+
+        <a class="main_grid_template flex_container_justify_center_vert" id="project_5" href="password generator/index.html" target="_blank">
             <div class="flex_container_justify_center flex_container_justify_center_vert" id="password_animation">
                 <div class="chars flex_container_justify_center" id="char1"></div>
                 <div class="chars flex_container_justify_center" id="char2"></div>
@@ -95,15 +183,7 @@
             <h1 class="template_project_heading">Password Generator</h1>
         </a>
 
-        <a class="main_grid_template flex_container_justify_center_vert" id="project_3" href="calculator/index.html" target="_blank">
-            <img id="calculator_icon" src="images/calculator.png" alt="Calculator">
-            <h1 class="template_project_heading">Calculator</h1>
-        </a>
-
-        <a class="main_grid_template flex_container_justify_center_vert" id="project_4" href="las palmas/index.html" target="_blank">
-            <img id="city_icon" src="images/icon white.png" alt="City">
-            <h1 class="template_project_heading">Las Palmas</h1>
-        </a>
+        
         
     </div>
 
@@ -124,6 +204,10 @@
             <a id="linkedin" class="flex_container_justify_center_vert footer_divs" href="https://www.linkedin.com/in/tristan-rodriguez-7959aa270/" target="_blank">
                 <img class="footer_icons_template" src="images/linkedin.png" alt="LinkedIn">
                 <h2 class="contact_text">Tristan Rodriguez</h2>
+            </a>
+            <a id="github" class="flex_container_justify_center_vert footer_divs" href="https://github.com/trodlop" target="_blank">
+                <img class="footer_icons_template" src="images/github.png" alt="GitHub">
+                <h2 class="contact_text">trodlop</h2>
             </a>
 
         </div>

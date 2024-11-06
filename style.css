@@ -628,8 +628,13 @@ h2 {
         width: 85%;
     }
     
+    skills_list {
+        margin-left: 10vw
+        width: 80vw;
+    }
+    
     skills_h1_template {
-        font-size: 10px;
+        font-size: 5px;
     }
 
     .main_grid:not(#project_1, #project_2, #project_3, #project_4) {

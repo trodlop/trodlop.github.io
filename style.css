@@ -627,6 +627,10 @@ h2 {
     #about_text {
         width: 85%;
     }
+    
+    skills_h1_template {
+        font-size: 10px;
+    }
 
     .main_grid:not(#project_1, #project_2, #project_3, #project_4) {
         display: flex;
